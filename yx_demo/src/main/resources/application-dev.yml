@@ -18,3 +18,12 @@ logging:
     com:
       example:
         mapper : debug
+
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+    encoding: utf-8
+    mode: html5
+    servlet:
+      content-type: text/html

@@ -13,4 +13,11 @@
         select * from user where id = #{id}
     </select>
 
+    <select id="login" resultType="User">
+        SELECT * FROM user where userName = #{param1} and passWord = #{param2}
+    </select>
+
+    <insert id="register" parameterType="User">
+        INSERT INTO user (userName, passWord) VALUES (#{userName}, #{passWord})
+    </insert>
 </mapper>
